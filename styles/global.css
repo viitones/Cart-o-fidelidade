@@ -1,0 +1,52 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink: #D658B3;
+  --green: #45B442;
+
+  --gray-700: #332B31;
+  --gray-600: #4A4448;
+  --gray-500: #756C71;
+  --gray-400: #D3CFD2;
+  --gray-300: #DFDCDF;
+  --gray-200: #E9E7E9;
+  --gray-100: #F4F1F2;
+  --gray-0: #FFFFFF
+
+  --gradient-base: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%)
+
+  --ff-base: "Oxygen", sans-serif;
+
+  --text-lg: 1.5rem;
+  --text-md: 1.125rem;
+  --text-base: 1rem;
+  --text-sm: 0.875rem;
+  --text-xsm: 0.75rem
+
+}
+
+body {
+  font-family: var(--ff-base);
+  background-color: var(--gray-200);
+}
+
+.container {
+  max-width: 55rem;
+  padding-inline: 1rem;
+  margin-inline: auto;
+}
+
+h1 {
+  font: bold var(--text-md) / 1.4 var(--ff-base)
+}
+
+
+img, i {
+  max-width: 100%;
+} 
+
+
