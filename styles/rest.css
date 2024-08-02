@@ -1,3 +1,64 @@
 #rest {
   grid-area: REST;
+
+  background-color: var(--gray-100);
+
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--gray-300);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    p {
+      color: var(--gray-500);
+      
+      span {
+        color: var(--gray-700);
+        font-weight: 700;
+        font-size: var(--text-md);
+      }
+    }
+
+      > div {
+        width: 25rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .bar {
+          background-color: var(--gray-300);
+          width: 21rem;
+          height: 0.5rem;
+          border-radius: 999px;
+
+          .progress {
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33%, #856CCF 67%, #D658B3 100%);
+            border-radius: 999px;
+          }
+        }
+
+        label {
+          color: var(--gray-500);
+          font-size: var(--text-sm);
+        }
+    }
+  }
+
+  > div:last-child {
+    background-color: var(--gray-200);
+    border-radius: 999px;
+
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  
 }

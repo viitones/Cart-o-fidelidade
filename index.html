@@ -19,6 +19,7 @@
       href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css"
     />
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script defer src="./script.js"></script>
 </head>
 <body>
   <header class="container">
@@ -103,6 +104,22 @@
           </div>
             <i class="ph ph-seal-check"></i>
         </li>
+
+        <li>
+          <div>
+            <span>29/04/2024</span>
+            <span>18:30</span>
+          </div>
+            <i class="ph ph-seal-check"></i>
+        </li>
+
+        <li>
+          <div>
+            <span>29/04/2024</span>
+            <span>18:30</span>
+          </div>
+            <i class="ph ph-seal-check"></i>
+        </li>
       </ul>
     </section>
 
@@ -138,7 +155,7 @@
         <li>
           <img src="./assets/icons/PinCheck.png" alt="ícone check - corte realizado">
         </li>
-        
+
         <li>
           <img src="./assets/icons/PinCheck.png" alt="ícone check - corte realizado">
         </li>
@@ -164,8 +181,11 @@
           cortes restantes
         </p>
         <div>
-          <input type="range" id="range">
-          <label for="range">7 de 10</label>
+          <div class="bar">
+            <div class="progress"></div>
+          </div>
+
+          <label><span id="count">0</span> de 10</label>
         </div>
       </div>
 
