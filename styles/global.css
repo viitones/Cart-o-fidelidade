@@ -32,8 +32,18 @@ body {
   background-color: var(--gray-200);
 }
 
+main {
+  display: grid;
+  column-gap: 1.5rem;
+  row-gap: 1rem;
+  grid-template-areas: 
+  "PROFILE CARD CARD"
+  "HISTORY CARD CARD"
+  "HISTORY REST REST";
+}
+
 .container {
-  max-width: 55rem;
+  max-width: 57rem;
   padding-inline: 1rem;
   margin-inline: auto;
 }

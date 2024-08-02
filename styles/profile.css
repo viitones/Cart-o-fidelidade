@@ -1,6 +1,6 @@
 #profile {
-  width: 100%;
-  max-width: 20rem;
+  grid-area: PROFILE;
+  width: 20rem;
 
   display: flex;
   align-items: center;
@@ -9,11 +9,8 @@
   padding: 1rem 0 1rem 1rem;
 
   background-color: var(--gray-100);
-  border: var(--gray-300);
+  border: 1px solid var(--gray-300);
   border-radius: 16px;
-
-  margin-bottom: 2rem;
-
 
   > figure {
     width: 60px;

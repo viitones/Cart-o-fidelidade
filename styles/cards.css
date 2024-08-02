@@ -1,0 +1,84 @@
+#cards {
+  grid-area: CARD;
+
+  width: 100%;
+  max-width: 35.5rem;
+
+  padding: 2.25rem 2rem 2rem;
+  border-radius: 20px;
+  border: 1px solid var(--gray-300);
+
+  background-color: var(--gray-100);
+
+  > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 2rem;
+
+    div {
+      margin-right: 1rem;
+
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+
+      color: var(--gray-500);
+
+      h2 {
+        font-size: var(--text-xsm);
+        font-weight: 700;
+      }
+      p {
+        font-size: var(--text-sm);
+        font-weight: 400;
+      }
+    }
+
+    span {
+      width: 10rem;
+      padding: 0.375rem 0.75rem;
+      border-radius: 999px;
+
+      font-size: var(--text-sm);
+      font-weight: 700;
+
+      color: var(--gray-500);
+      background-color: var(--gray-300);
+    }
+  }
+
+
+  ul {
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    width: 31.5rem;
+
+    li {
+      width: 5.5rem;
+      height: 5.5rem;
+
+      background-color: var(--gray-200);
+      border-radius: 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:last-child {
+        i {
+          font-size: 40px;
+          color: var(--gray-500);
+          opacity: 0.35;
+        }
+      }
+    }
+  }
+}
