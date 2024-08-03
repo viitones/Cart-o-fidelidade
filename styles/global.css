@@ -46,6 +46,10 @@ body {
 }
 
 main {
+  max-width: 57rem;
+  /* padding-inline: 1rem; */
+  margin-inline: auto;
+
   display: grid;
   column-gap: 1.5rem;
   row-gap: 1rem;
@@ -53,12 +57,6 @@ main {
   "PROFILE CARD CARD"
   "HISTORY CARD CARD"
   "HISTORY REST REST";
-}
-
-.container {
-  max-width: 57rem;
-  padding-inline: 1rem;
-  margin-inline: auto;
 }
 
 h1 {
@@ -70,4 +68,15 @@ img, i {
   max-width: 100%;
 } 
 
+@media screen and (width <= 80rem) {
+  main {
+    grid-template-areas: 
+    "PROFILE"
+    "CARD"
+    "REST"
+    "HISTORY";
 
+    padding-inline: 1rem;
+
+  }
+}

@@ -1,6 +1,9 @@
 #rest {
   grid-area: REST;
 
+  width: 100%;
+  max-width: 35.5rem;
+
   background-color: var(--gray-100);
 
   padding: 2rem;
@@ -26,7 +29,7 @@
       }
     }
 
-      > div {
+      .cuts {
         width: 25rem;
         display: flex;
         align-items: center;
@@ -61,4 +64,44 @@
     height: 4.5rem;
   }
   
+}
+
+@media screen and (width <= 80rem) {
+  #rest {
+    max-width: 100%;
+  }
+
+  .cuts {
+    width: fit-content !important;
+  }
+
+  .bar {
+    width: 20rem !important;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (width <= 37rem) {
+  #rest {
+    .gift {
+      display: none;
+    }
+
+    > div{
+      width: 100%;
+    }
+
+    .cuts {
+      width: 100% !important;
+    }
+
+    .bar {
+      max-width: 14rem !important;
+      margin-right: 0;
+    }
+    label {
+      margin-left: auto;
+      width: 3rem;
+    }
+  }
 }

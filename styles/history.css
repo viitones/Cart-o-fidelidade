@@ -79,3 +79,9 @@
     }
   }
 }
+
+@media screen and (width <= 80rem) {
+  #history {
+    max-width: 100%;
+  }
+}

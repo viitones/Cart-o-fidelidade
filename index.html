@@ -22,14 +22,16 @@
   <script defer src="./script.js"></script>
 </head>
 <body>
-  <header class="container">
-    <img src="./assets/logo.svg" alt="Logo da Member Club - Member Club">
-    <form action="">
-      <input type="text" placeholder="ID do cartão">
-      <button>
-        <i class="ph ph-arrow-elbow-down-left"></i>
-      </button>
-    </form>
+  <header>
+    <div>
+      <img src="./assets/logo.svg" alt="Logo da Member Club - Member Club">
+      <form action="">
+        <input type="text" placeholder="ID do cartão">
+        <button>
+          <i class="ph ph-arrow-elbow-down-left"></i>
+        </button>
+      </form>
+    </div>
   </header>
   <main class="container">
     <section id="profile">
@@ -42,7 +44,7 @@
       </div>
     </section>
 
-    <section id="history">
+  <section id="history">
       <div>
         <h2>HISTÓRICO</h2>
         <span>7 cortes</span>
@@ -175,12 +177,12 @@
     </section>
 
     <sections id="rest">
-      <div>
+      <div class="fault">
         <p>
           <span>3</span>
           cortes restantes
         </p>
-        <div>
+        <div class="cuts">
           <div class="bar">
             <div class="progress"></div>
           </div>
@@ -189,7 +191,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="gift">
         <img src="./assets/icons/PinGift.png" alt="">
       </div>
     </sections>
