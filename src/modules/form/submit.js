@@ -2,7 +2,6 @@ const form = document.querySelector('form');
 
 import { clientSelected } from "../client/clientLoad"
 
-const clientName = document.getElementById("client")
 const idInput = document.querySelector("input")
 
 form.onsubmit = async(e) => {
@@ -18,9 +17,10 @@ form.onsubmit = async(e) => {
 
     clientSelected()
     
+    
+    
   } catch (error) {
     console.log(error);
     alert(error);
   }
-  
 }

@@ -6,9 +6,9 @@ export async function clientCuts({id}) {
 
     const data = await response.json();
 
-    const clientID = data.filter((client) => id === client.id)
-
-    return clientID
+    const clientByID = data.find((client) => id === client.id)
+    
+    return clientByID
 
   } catch (error) {
     console.log(error);
