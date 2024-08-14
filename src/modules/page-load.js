@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     
     const data = await response.json()
 
-    const firstClient = data.find((client) => client.id === "123")
+    const firstClient = data.find((client) => client.id === "124-537-835-230")
 
     clientShow(firstClient)
   } catch (err) {
