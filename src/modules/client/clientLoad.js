@@ -10,5 +10,7 @@ export async function clientSelected() {
 
   const clientSelectedOnDB = await clientCuts({ id })
   
+  
+  
   clientShow(clientSelectedOnDB)
 }

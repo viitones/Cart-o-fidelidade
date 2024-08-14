@@ -8,7 +8,7 @@ export function clientShow(clientByID) {
     clientName.innerHTML = ""
     since.innerHTML = ""
     avatar.setAttribute("src", "")
-    avatar.setAttribute("alt", "")
+    avatar.setAttribute("alt", `foto de perfil de ${clientByID.name}`)
     
 
     clientName.innerHTML = clientByID.name
@@ -21,7 +21,5 @@ export function clientShow(clientByID) {
 
   } catch (error) {
     console.log(error);
-    
-    // alert(error)
   }
 }

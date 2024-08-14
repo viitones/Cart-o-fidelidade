@@ -1,4 +1,4 @@
-import { apiConfig } from "./api-config.js"
+import { apiConfig } from "./api-config.js";
 
 export async function clientCuts({id}) {
   try {
@@ -8,6 +8,15 @@ export async function clientCuts({id}) {
 
     const clientByID = data.find((client) => id === client.id)
     
+    if (clientByID === undefined) {
+     alert("Usuário não encontrado!")
+
+     return 
+    }
+
+    console.log(clientByID);
+    
+
     return clientByID
 
   } catch (error) {

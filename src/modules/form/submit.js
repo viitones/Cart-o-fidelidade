@@ -8,16 +8,14 @@ form.onsubmit = async(e) => {
   e.preventDefault();
   
   try {
-    const idClient = idInput.value.trim();
-    console.log(idClient);
+    const idClient = idInput.value;
     
     if(!idClient) {
-      return alert("Por favor, digite um ID válido")
+      alert("Por favor, digite um ID válido")
+      return idClient = "123"
     }
 
     clientSelected()
-    
-    
     
   } catch (error) {
     console.log(error);

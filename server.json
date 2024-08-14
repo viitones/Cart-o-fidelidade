@@ -1,8 +1,16 @@
 {
   "clients": [
     {
-        "id": "asd",
-        "name": "teste"
+        "id": "123",
+        "name": "‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒",
+        "avatar": "https://www.gov.br/cdn/sso-status-bar/src/image/user.png",
+        "clientSince": "__/__/____",
+        "appointmentHistory": [],
+        "loyaltyCard": {
+            "totalCuts": 0,
+            "cutsNeeded": 10,
+            "cutsRemaining": 10
+        }
     },
     {
           "id": "124-537-835-230",
