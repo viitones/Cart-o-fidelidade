@@ -5,6 +5,9 @@ const avatar = document.querySelector("#profile figure img")
 const listOfHistory = document.getElementById("history-list")
 const cuts = document.getElementById("cuts")
 
+const profileID = document.getElementById("profile-ID")
+const allCard = document.querySelectorAll("#cards-list li")
+
 export function clientShow(clientByID) {
   try {
     //limpa os status
@@ -28,7 +31,6 @@ export function clientShow(clientByID) {
     
     if(cutsFromAPI.length >= 1) {
       cutsFromAPI.map((cut) => {
-        console.log(cut);
 
         const list = document.createElement("li")
         const div = document.createElement("div")
@@ -45,8 +47,24 @@ export function clientShow(clientByID) {
         listOfHistory.append(list)
       });
     }
-    
 
+    profileID.textContent = ""
+    profileID.textContent = `ID: ${clientByID.id}`
+    
+    allCard.forEach((card) => {
+      card.classList.remove("pinned");
+    })
+
+    let count = 0
+    allCard.forEach((card) => {
+      if (count < cutsFromAPI.length) {
+        card.classList.add("pinned");
+        count++;
+      }
+    })
+
+
+    
 
   } catch (error) {
     console.log(error);

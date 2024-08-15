@@ -44,9 +44,9 @@
               }
           ],
           "loyaltyCard": {
-              "totalCuts": 7,
+              "totalCuts": 6,
               "cutsNeeded": 10,
-              "cutsRemaining": 3
+              "cutsRemaining": 4
           }
     },
     {
@@ -70,12 +70,36 @@
             {
                 "date": "05/11/2023",
                 "time": "10:30"
+            },
+            {
+                "date": "26/10/2023",
+                "time": "11:30"
+            },
+            {
+                "date": "24/09/2023",
+                "time": "08:30"
+            },
+            {
+                "date": "20/08/2023",
+                "time": "10:00"
+            },
+            {
+                "date": "15/07/2023",
+                "time": "11:00"
+            },
+            {
+                "date": "08/06/2023",
+                "time": "10:00"
+            },
+            {
+                "date": "01/05/2023",
+                "time": "10:00"
             }
         ],
         "loyaltyCard": {
-            "totalCuts": 4,
+            "totalCuts": 10,
             "cutsNeeded": 10,
-            "cutsRemaining": 6
+            "cutsRemaining": 0
         }
     },
     {
@@ -102,9 +126,9 @@
             }
         ],
         "loyaltyCard": {
-            "totalCuts": 5,
-            "cutsNeeded": 8,
-            "cutsRemaining": 3
+            "totalCuts": 4,
+            "cutsNeeded": 10,
+            "cutsRemaining": 6
         }
     }
   ]
