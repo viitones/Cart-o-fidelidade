@@ -33,14 +33,39 @@
 </table>
 
   > [!NOTE]  
-  >  Apenas ao atingir 10 cortes o membro se torna elegível para um corte de cabelo gratuito
+  >  Apenas ao atingir 10 cortes o membro se torna elegível para um corte de cabelo gratuito 
+
+<h2 id="Assets">⚛️ O projeto</h2>
+<div align="center>
+  
+  <img src="https://i.ibb.co/jrVwj9W/Captura-de-tela-2024-08-19-152138.png" border="0">
+  <img src="https://i.ibb.co/64zGMLL/Captura-de-tela-2024-08-19-152051.png" border="0">
+  <img src="https://i.ibb.co/JHwvhb1/Captura-de-tela-2024-08-19-152121.png" border="0">
+  <img src="https://i.ibb.co/jrVwj9W/Captura-de-tela-2024-08-19-152138.png" border="0">
+
+</div>
 
 <h2 id="como-acessar">🔗 Como Acessar</h2>
 
+
 <p>
-  O projeto está hospedado no GitHub Pages e pode ser acessado <a href="https://skitttz.github.io/MBA-Rocketseat/">aqui</a>.
+  O projeto precisa ser baixado através dos seguintes passos:
 </p>
 
-<h2 id="licenca">📄 Licença</h2>
+1. Para clonar o repositório abra o terminal e use os comandos:
+```bash
+git clone https://github.com/viitones/Cart-o-fidelidade.git
+cd .\Cart-o-fidelidade\
+```
 
-<p>
+2. Configure os arquivos:
+```bash
+npm i
+```
+
+2. Inicialize o projeto:
+```bash
+npm run build
+npm run server
+npm run dev
+```
