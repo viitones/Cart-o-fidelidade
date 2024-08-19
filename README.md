@@ -17,17 +17,17 @@
     <tr>
       <td>124-537-835-230</td>
       <td>Natália Miranda</td>
-      <td>7</td>
+      <td>6</td>
     </tr>
     <tr>
       <td>207-245-699-104</td>
       <td>Capitão Nascimento</td>
-      <td>4</td>
+      <td>10</td>
     </tr>
     <tr>
       <td>523-114-876-908</td>
       <td>Sansão</td>
-      <td>5</td>
+      <td>4</td>
     </tr>
   </tbody>
 </table>
