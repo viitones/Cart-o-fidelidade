@@ -10,6 +10,7 @@ import "./styles/profile.css";
 import "./styles/history.css";
 import "./styles/cards.css";
 import "./styles/rest.css";
+import "./styles/modal.css";
 
 //JS
 import "./modules/form/submit.js"

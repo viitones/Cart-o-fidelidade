@@ -19,6 +19,6 @@ form.onsubmit = async(e) => {
     
   } catch (error) {
     console.log(error);
-    alert(error);
+    alert("Algo deu errado.");
   }
 }

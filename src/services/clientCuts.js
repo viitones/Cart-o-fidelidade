@@ -13,8 +13,6 @@ export async function clientCuts({id}) {
 
      return 
     }
-
-    console.log(clientByID);
     
 
     return clientByID

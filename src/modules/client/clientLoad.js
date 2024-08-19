@@ -9,8 +9,7 @@ export async function clientSelected() {
   const id = idInput.value;
 
   const clientSelectedOnDB = await clientCuts({ id })
-  
-  
+
   
   clientShow(clientSelectedOnDB)
 }

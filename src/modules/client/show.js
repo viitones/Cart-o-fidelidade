@@ -1,3 +1,5 @@
+import { openModal } from "../modal/openModal"
+
 const clientName = document.getElementById("client")
 const since = document.getElementById("since")
 const avatar = document.querySelector("#profile figure img")
@@ -8,6 +10,11 @@ const cuts = document.getElementById("cuts")
 const profileID = document.getElementById("profile-ID")
 const allCard = document.querySelectorAll("#cards-list li")
 
+const cutsRemains = document.querySelector(".cutsRemains")
+const progress = document.querySelector(".progress")
+const counts = document.querySelector("#count")
+const gift = document.querySelector(".gift")
+
 export function clientShow(clientByID) {
   try {
     //limpa os status
@@ -16,6 +23,7 @@ export function clientShow(clientByID) {
     avatar.setAttribute("src", "")
     avatar.setAttribute("alt", `foto de perfil de ${clientByID.name}`)
     listOfHistory.innerHTML = ""
+
 
     
 
@@ -65,6 +73,22 @@ export function clientShow(clientByID) {
 
 
     
+    cutsRemains.innerHTML = `<span>${clientByID.loyaltyCard.cutsRemaining}</span> corte${clientByID.loyaltyCard.cutsRemaining === 1 ? "" : "s"} restante${clientByID.loyaltyCard.cutsRemaining === 1 ? "" : "s"}`
+    
+
+    progress.style.width = `${clientByID.loyaltyCard.totalCuts / clientByID.loyaltyCard.cutsNeeded * 100}%`
+
+    counts.textContent = `${clientByID.loyaltyCard.totalCuts}`
+    
+    gift.classList.remove("finished")
+
+    if(clientByID.loyaltyCard.totalCuts === 10) {
+      gift.classList.add("finished")
+
+      setTimeout(() => {
+        openModal()
+      }, 1000)
+    }
 
   } catch (error) {
     console.log(error);

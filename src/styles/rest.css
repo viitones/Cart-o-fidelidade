@@ -42,10 +42,11 @@
           border-radius: 999px;
 
           .progress {
-            width: 50%;
             height: 100%;
             background: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33%, #856CCF 67%, #D658B3 100%);
             border-radius: 999px;
+            
+            animation: progressGrowth 2s ease;
           }
         }
 
@@ -62,8 +63,47 @@
 
     width: 4.5rem;
     height: 4.5rem;
+
+    filter:drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.08))
+    drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.07))
+    drop-shadow(0px 15px 9px rgba(0, 0, 0, 0.04))
+    drop-shadow(0px 26px 10px rgba(0, 0, 0, 0.01))
+    drop-shadow(0px 40px 11px rgba(0, 0, 0, 0));
+    ;
+
+    text-align: center;
+
+    &.finished {
+      background: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33%, #856CCF 67%, #D658B3 100%);
+      color: var(--white);
+
+      animation: backgroundGrowth 2s ease;
+    }
   }
   
+}
+
+@keyframes progressGrowth {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 1;
+  }
+}
+
+@keyframes backgroundGrowth {
+  0%{
+    background: var(--base-gray-200);
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    background: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33%, #856CCF 67%, #D658B3 100%);
+    transform: scale(1);
+  } 
 }
 
 @media screen and (width <= 80rem) {
